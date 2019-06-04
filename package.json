@@ -1,0 +1,24 @@
+{
+  "name": "rubify",
+  "version": "1.0.0",
+  "description": "Still missing Ruby?",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": "git@github.com:cristianbgp/rubify.git",
+  "keywords": [
+    "ruby",
+    "javascript",
+    "useless"
+  ],
+  "author": "cristianbgp <cristian.granda.pastor@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
