@@ -42,3 +42,11 @@ const times = (number, callback) => {
     callback(index);
   }
 };
+
+const capitalize = string => {
+  return `${string[0].toUpperCase()}${string.slice(1)}`;
+};
+
+const uniq = array => {
+  return [...new Set(array)];
+};
