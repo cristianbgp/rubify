@@ -50,3 +50,18 @@ const capitalize = string => {
 const uniq = array => {
   return [...new Set(array)];
 };
+
+export default {
+  p,
+  puts,
+  reverse,
+  empty,
+  chars,
+  downcase,
+  upcase,
+  even,
+  odd,
+  times,
+  capitalize,
+  uniq
+};
