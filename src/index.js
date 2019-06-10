@@ -51,7 +51,7 @@ const uniq = array => {
   return [...new Set(array)];
 };
 
-export default {
+export {
   p,
   puts,
   reverse,
