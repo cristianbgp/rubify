@@ -5,11 +5,7 @@ Number.prototype.times = function(callback) {
   for (let i = 0; i < +this; i++) {
     callback(i);
   }
-  return;
 };
-
-// usage :
-// new Number(2).times(console.log);
 
 const reverse = string => {
   if (typeof string === "string") {
