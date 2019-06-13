@@ -1,11 +1,7 @@
 const p = console.log;
 const puts = console.log;
 
-Number.prototype.times = function(callback) {
-  for (let i = 0; i < +this; i++) {
-    callback(i);
-  }
-};
+// String
 
 const reverse = string => {
   if (typeof string === "string") {
@@ -31,6 +27,12 @@ const upcase = string => {
   return string.toUpperCase();
 };
 
+const capitalize = string => {
+  return `${string[0].toUpperCase()}${string.slice(1)}`;
+};
+
+//Number
+
 const even = number => {
   if (typeof number === "number") {
     return number % 2 === 0;
@@ -43,15 +45,15 @@ const odd = number => {
   }
 };
 
-const times = (number, callback) => {
-  for (let index = 1; index <= number; index++) {
-    callback(index);
+const times = function(callback) {
+  for (let i = 0; i < +this; i++) {
+    callback(i);
   }
 };
 
-const capitalize = string => {
-  return `${string[0].toUpperCase()}${string.slice(1)}`;
-};
+Number.prototype.times = times;
+
+// Array
 
 const uniq = array => {
   return [...new Set(array)];
