@@ -16,7 +16,7 @@ const empty = something => {
 };
 
 const chars = string => {
-  return string.split("");
+  return [...string];
 };
 
 const downcase = string => {
@@ -59,6 +59,10 @@ const uniq = array => {
   return [...new Set(array)];
 };
 
+const transpose = array => {
+  return array[0].map((_, i) => array.map(row => row[i]));
+};
+
 export {
   p,
   puts,
@@ -71,5 +75,6 @@ export {
   odd,
   times,
   capitalize,
-  uniq
+  uniq,
+  transpose
 };
